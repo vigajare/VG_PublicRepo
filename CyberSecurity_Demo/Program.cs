@@ -10,7 +10,7 @@ namespace CyberSecurity_Demo
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Cyber Sec Test Demo");
+            Console.WriteLine("Cyber Sec Test Demo1");
             Console.ReadLine();
         }
     }

@@ -10,6 +10,7 @@ namespace CyberSecurity_Demo
     {
         class Abc
         {
+             
         }
         public class Class1
         {
@@ -42,6 +43,8 @@ namespace CyberSecurity_Demo
             Abc objabc = new Abc();
             Class1 obj = new Class1();
             var var1 = 1;
+            int a = 10, b = 0;
+            var c = a / b; //DivideByZeroException 
             decimal result = obj.Calculate(5000, 2, 5);
             Console.WriteLine("Result = " + result);
             Console.ReadLine();

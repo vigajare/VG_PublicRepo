@@ -9,9 +9,14 @@ namespace CyberSecurity_Demo
 {
     class Program
     {
+      
         class Abc
         {
-             
+            public string Addlicense(string licenseName, string licenseKey)
+            {
+                string license = licenseName + licenseKey;
+                return license;
+            }
         }
         public class Class1
         {
@@ -49,14 +54,19 @@ namespace CyberSecurity_Demo
             decimal result = obj.Calculate(5000, 2, 5);
             Console.WriteLine("Result = " + result);
             Console.ReadLine();
-            Console.Write("Enter input path/filename: ");
-            string inputFile = Console.ReadLine();
-            inputFile = inputFile.Length > 0 ? inputFile : "C:\\Temp\\Test.xlsx";
-            if (File.Exists(inputFile))
-            {
-                string outputFile = "C:\\Temp\\Test.xlsx";
-            }
+            //Console.Write("Enter input path/filename: ");
+            //string inputFile = Console.ReadLine();
+            //inputFile = inputFile.Length > 0 ? inputFile : "C:\\Temp\\Test.xlsx";
+            //if (File.Exists(inputFile))
+            //{
+            //    string outputFile = "C:\\Temp\\Test.xlsx";
+            //}
+            var licenseName = "4434;700-terumobct.com";
+            var licenseKey = "b72120c7-059c-27a4-ef1d-0589d74128d2";
+            objabc.Addlicense(licenseName, licenseKey);
 
-            }
+
+
+        }
     }
 }

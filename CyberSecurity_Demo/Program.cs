@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.IO;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -40,7 +41,7 @@ namespace CyberSecurity_Demo
 
         static void Main(string[] args)
         {
-            Abc objabc = new Abc()
+            Abc objabc = new Abc();
             Class1 obj = new Class1();
             var var1 = 1;
             int a = 10, b = 0;
@@ -48,6 +49,14 @@ namespace CyberSecurity_Demo
             decimal result = obj.Calculate(5000, 2, 5);
             Console.WriteLine("Result = " + result);
             Console.ReadLine();
-        }
+            Console.Write("Enter input path/filename: ");
+            string inputFile = Console.ReadLine();
+            inputFile = inputFile.Length > 0 ? inputFile : "C:\\Temp\\Test.xlsx";
+            if (File.Exists(inputFile))
+            {
+                string outputFile = "C:\\Temp\\Test.xlsx";
+            }
+
+            }
     }
 }

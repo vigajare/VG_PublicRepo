@@ -40,7 +40,7 @@ namespace CyberSecurity_Demo
 
         static void Main(string[] args)
         {
-            Abc objabc = new Abc();
+            Abc objabc = new Abc()
             Class1 obj = new Class1();
             var var1 = 1;
             int a = 10, b = 0;

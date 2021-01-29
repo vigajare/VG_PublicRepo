@@ -8,6 +8,9 @@ namespace CyberSecurity_Demo
 {
     class Program
     {
+        class Abc
+        {
+        }
         public class Class1
         {
             public decimal Calculate(decimal amount, int type, int years)
@@ -36,8 +39,10 @@ namespace CyberSecurity_Demo
 
         static void Main(string[] args)
         {
+            Abc objabc = new Abc();
             Class1 obj = new Class1();
-            decimal result = obj.Calculate(5000,2,5);
+            var var1 = 1;
+            decimal result = obj.Calculate(5000, 2, 5);
             Console.WriteLine("Result = " + result);
             Console.ReadLine();
         }
